@@ -1,0 +1,268 @@
+.container {
+  padding: 0 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.main {
+  flex: 1;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .main {
+    padding: 2rem 0;
+  }
+}
+
+.footer {
+  display: flex;
+  padding: 1.5rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #5230F6;
+  font-weight: bold;
+  width: 100%;
+  background-color: #f8f9fa;
+  margin-top: 2rem;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.title a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.2;
+  font-size: 3.2rem;
+}
+
+@media (max-width: 600px) {
+  .title {
+    line-height: 1.2;
+  }
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 300px;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.form {
+  width: 100%;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 16px;
+}
+
+.inputGroup {
+  margin-bottom: 1rem;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #5D5D63;
+}
+
+.inputGroup input:focus {
+  outline: none;
+  border-color: #666666;
+}
+
+.inputGroup input::-webkit-input-placeholder {
+  font-weight: 100;
+}
+.inputGroup input::-moz-placeholder {
+  font-weight: 100;
+}
+.inputGroup input:-ms-input-placeholder {
+  font-weight: 100;
+}
+.inputGroup input::placeholder {
+  font-weight: 100;
+}
+
+.button {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  color: white;
+  background: #5230F6;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 1.5rem 0 2rem;
+}
+
+.button:hover {
+  background: #4120d6;
+}
+
+.credit {
+  text-align: center;
+  color: #808080;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.button:disabled,
+.copyButton:disabled {
+  background: #9d9d9d;
+  cursor: not-allowed;
+}
+
+.result {
+  margin-top: 1rem;
+}
+
+.result label {
+  display: block;
+  margin: 0.5rem 0 0.4rem;
+  font-weight: 500;
+}
+
+.copyGroup {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.result input {
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  cursor: text;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #5D5D63;
+  text-align: left;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 600px) {
+  .result input {
+    text-align: right;
+    direction: rtl;
+  }
+}
+
+.copyButton {
+  padding: 0.5rem 1rem;
+  background: #5230F6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.copyButton:hover {
+  background: #4120d6;
+}
+
+.logo {
+  height: 1em;
+  margin-left: 0.2rem;
+}
+
+.youtubeLogo {
+  height: 1.14em;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 0.2em;
+  transform: translateY(-0.05em);
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
